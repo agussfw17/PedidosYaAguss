@@ -4,7 +4,7 @@ import {useState} from "react";
 import Header from "./src/components/Header";
 import Search from "./src/components/Search";
 import Categories from "./src/components/Categories";
-import Categories from "./src/components/Categories";
+
 
 export default function App(){
   const [term,setTerm] = useState("Burger")
