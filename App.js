@@ -7,6 +7,7 @@ import Categories from "./src/components/Categories";
 import Restaurnats from "./src/components/Restaurants";
 
 
+
 export default function App(){
   const [term,setTerm] = useState("Burger")
   const commonCategories = [
