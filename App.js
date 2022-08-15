@@ -4,6 +4,8 @@ import {useState} from "react";
 import Header from "./src/components/Header";
 import Search from "./src/components/Search";
 import Categories from "./src/components/Categories";
+import Restaurnats from "./src/components/Restaurants";
+
 
 export default function App(){
   const [term,setTerm] = useState("Burger")
@@ -37,11 +39,8 @@ export default function App(){
     <View>
       <Header />
       <Search setTerm={setTerm}/>
-      <Categories 
-        categories = {commonCategories}
-        setTerm = {setTerm}
-        term = {term}
-      />
+      <Categories categories = {commonCategories} setTerm = {setTerm} term = {term}/>
+      <Restaurnats/>
       <StatusBar/>
     </View>
   );
